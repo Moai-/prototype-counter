@@ -1,36 +1,26 @@
+## Prototype Counter
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+Simple counter app designed to prototype the passage of time, resources, and events for a resource-management-style game. Keep track of your resources with events that modify those resources.
 
-First, run the development server:
+## Basic usage example
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Run `yarn dev` to launch the project locally, and open [http://localhost:3000](http://localhost:3000) with your browser to see the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+These instructions simulate smelting 10 iron ore into 5 iron bars.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Click "Add Resource" and enter "Iron Ore" for the name. Press "Add" or the Enter key when done to add this resource.
+2. Click the gray 0 that appears in the Resources list across from Iron Ore, set it to 10, and press the Enter key.
+3. Click "Add Resource" again, and add a new resource called "Iron Bar".
+4. Click "Add Event".
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Enter "Smelt Ore into Bar" as Event Name.
+- Set the tick counter (to the right of the Event Name input) to 2.
+- Press "Add Outcome". Select "Iron Ore" in the first input, "Decrement" in the second, enter 2 as the amount in the third, and "Before" in the fourth.
+- Press "Add Outcome" again. Select "Iron Bar" in the first input, "Increment" in the second, leave 1 as the amount in the third, and "After" in the fourth.
+- Check the box that says "Repeating".
+- Click "Add event" in the modal.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. Now press the "Next Tick" button twice. The "Smelt Ore into Bar" event will complete, and automatically add a new copy of it to repeat.
+6. Pressing the "Next Tick" button 10 times or more will fail this event (as there is no more ore), and prevent it from repeating.

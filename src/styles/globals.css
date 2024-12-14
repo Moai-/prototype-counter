@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.event {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
