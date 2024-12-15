@@ -4,6 +4,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 Simple counter app designed to prototype the passage of time, resources, and events for a resource-management-style game. Keep track of your resources with events that modify those resources.
 
+![App preview](https://github.com/Moai-/prototype-counter/blob/master/prototype-counter.png)
+
 ## Basic usage example
 
 Run `yarn dev` to launch the project locally, and open [http://localhost:3000](http://localhost:3000) with your browser to see the app.
