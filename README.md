@@ -6,6 +6,11 @@ Simple counter app designed to prototype the passage of time, resources, and eve
 
 ![App preview](https://github.com/Moai-/prototype-counter/blob/master/prototype-counter.png)
 
+## Requirements
+
+* Node version >=20
+* Next.js installed globally
+
 ## Basic usage example
 
 Run `yarn dev` to launch the project locally, and open [http://localhost:3000](http://localhost:3000) with your browser to see the app.
